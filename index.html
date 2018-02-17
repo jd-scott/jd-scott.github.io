@@ -369,8 +369,16 @@
         </div>
         <div id="collapse20" class="panel-collapse collapse">
             <div class="panel-body">
-                <img src="images/triose_and_pentose.jpg" alt="Triose and Pentose" style="width:100%;max-width:600px;">
-                <img src="images/hexose.jpg" alt="Hexose" style="width:100%;max-width:600px;">
+                <img class="mySlides" src="images/triose_and_pentose.jpg" alt="Triose and Pentose" style="width:100%;max-width:600px;">
+                <img class="mySlides" src="images/hexose.jpg" alt="Hexose" style="width:100%;max-width:600px;">
+            </div>
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s6">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/triose_and_pentose.jpg" style="width:100%" onclick="currentDiv(1)">
+                </div>
+                <div class="w3-col s6">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/hexose.jpg" style="width:100%" onclick="currentDiv(2)">
+                </div>
             </div>
             <script>slideshow();</script>
         </div>
