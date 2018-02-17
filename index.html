@@ -484,7 +484,22 @@
         </div>
         <div id="collapse31" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>	Answer	</p>
+                <button onclick="myFunction()">Question Here...</button>
+
+                <p id="demo"></p>
+
+                <script>
+                    function myFunction() {
+                        var txt;
+                        var answer = prompt("What is the 2` molecule for DNA:");
+                        if (answer == "Hydrogen" || answer == "hydrogen" || answer == "h" || answer == "H") {
+                            txt = "Correct";
+                        } else {
+                            txt = "Please try again";
+                        }
+                        document.getElementById("demo").innerHTML = txt;
+                    }
+                </script>
             </div>
         </div>
     </div>
