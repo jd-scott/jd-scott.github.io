@@ -1,1 +1,12 @@
-/*CSS for biol13*/ 
+/*CSS for biol13*/
+
+<style > 
+.mySlides {
+    display: none
+}
+
+.demo {
+    cursor: pointer
+}
+
+</style >
