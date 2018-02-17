@@ -500,6 +500,30 @@
                         document.getElementById("demo").innerHTML = txt;
                     }
                 </script>
+                <!DOCTYPE html>
+                <html>
+                <body>
+
+                    <button onclick="myFunction()">Answer</button>
+
+                    <p id="demo"></p>
+
+                    <script>
+                        function myFunction() {
+                            var txt;
+                            var answer = prompt("What is the 2` molecule for RNA:");
+                            if (answer == "Hydroxide" || answer == "hydroxide" || answer == "oh" || answer == "OH" || answer == "Oh") {
+                                txt = "Correct";
+                            } else {
+                                txt = "Please try again";
+                            }
+                            document.getElementById("demo").innerHTML = txt;
+                        }
+                    </script>
+
+                </body>
+            </html>
+
             </div>
         </div>
     </div>
