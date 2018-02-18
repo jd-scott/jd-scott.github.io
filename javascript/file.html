@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="css/style.css" />-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="javascript/javascript.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .mySlides {
+            display: none
+        }
+
+        .demo {
+            cursor: pointer
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="width:100%;height:100%;display:inline-block;">
+        <h2 style="text-align:center;">Chapters 1 to 4</h2>
+        <p style="text-align:center;">Click on each question to see answer.</p>
+        <div class="panel-group" id="accordion">
+            <!--1-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">	<a data-toggle="collapse" data-parent="#accordion" href="#collapse20">	20. Be ale to distinguish between a hexose, a pentose and a triose	</a>	</h4>
+                </div>
+                <div id="collapse20" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <img class="mySlides" src="images/triose_and_pentose.jpg" alt="Triose and Pentose" style="width:100%;max-width:600px;">
+                        <img class="mySlides" src="images/hexose.jpg" alt="Hexose" style="width:100%;max-width:600px;">
+                    </div>
+                    <div class="w3-row-padding w3-section">
+                        <div class="w3-col s6">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/triose_and_pentose.jpg" style="width:100%" onclick="currentDiv(1)">
+                        </div>
+                        <div class="w3-col s6">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/hexose.jpg" style="width:100%" onclick="currentDiv(2)">
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</body>
+</html>
