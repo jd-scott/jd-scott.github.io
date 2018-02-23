@@ -34,3 +34,12 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+h1 {
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding-left: 0;
+}
