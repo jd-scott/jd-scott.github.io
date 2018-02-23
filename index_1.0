@@ -6,8 +6,7 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Proteins</h1>
-    <button class="accordion">1. Describe each of the levels of structure of a protein, indicate the types of bonds or molecular interactions responsible for each level and be able to identify each if provided a description or diagram.</button><div class="panel"><p>Answer</p></div>
+    <h1>Proteins Continued</h1>
     <button class="accordion">2. Identify the C-terminus and the N-terminus of a polypeptide.</button><div class="panel"><p>Answer</p></div>
     <button class="accordion">3. Describe how the shape and surface chemistry affect the potential function of a protein.</button><div class="panel"><p>Answer</p></div>
     <button class="accordion">4. Discuss how environmental conditions such as temperature</button><div class="panel"><p>Answer</p></div>
