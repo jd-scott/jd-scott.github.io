@@ -11,17 +11,17 @@
     transition: 0.4s;
 }
 
-    .active, .accordion:hover {
-        background-color: #ccc;
-    }
+.active, .accordion:hover {
+    background-color: #ccc;
+}
 
-    .accordion:after {
-        content: '\002B';
-        color: #777;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
 
 .active:after {
     content: "\2212";
@@ -42,4 +42,7 @@ li {
 }
 ul {
     padding-left: 0;
+}
+#myInput {
+    align-content:center;
 }
