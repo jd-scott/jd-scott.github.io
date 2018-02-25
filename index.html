@@ -4,15 +4,16 @@
     <title>Unit 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <input type="text" id="myInput" onkeyup="search()" placeholder="Search">
     <ul id="myUL">
         <li>
             <button class="accordion">
-                (a) Describe each of the levels of structure of a protein.
-                (b) Indicate the types of bonds or molecular interactions responsible for each level.
-                (c) Be able to identify each if provided a description or diagram.
+                (A) Describe each of the levels of structure of a protein.
+                (B) Indicate the types of bonds or molecular interactions responsible for each level.
+                (C) Be able to identify each if provided a description or diagram.
             </button><div class="panel">
                 <dl>
                     <dt>1. Primary</dt><dd>Linear chain of Amino Acids.</dd>
@@ -37,25 +38,51 @@
             <button class="accordion">
                 Describe how the shape and surface chemistry affect the potential function of a protein.
             </button><div class="panel">
-                <p>Shape determines the function of the cell.</p>
-                <p>Most notably, shape is a spontaneous process, from the interactions of the 2<sup>o</sup> and 3<sup>o</sup> subunits.</p>
-                <p>Folding into its 3-D structure begins as the protein is being synthesized.</p>
-                <p>More advanced, there are <b>3 factors</b> affecting cell structure as well.</p>
-                <p>(1) pH; (2) Salt concentration; (3) Temperature; (4) Other Environmental factors</p>
-                <p>Altering one of these factors leads to <b>denaturation</b>. This is the loss of the proteins shape.</p>
+                <table>
+                    <tr>Shape determines the function of the cell.</tr>
+                    <tr>Most notably, shape is a spontaneous process, from the interactions of the 2<sup>o</sup> and 3<sup>o</sup> subunits, which are formed by the 1<sup>o</sup> structure because of the Amino Acids.</tr>
+                    <tr>Folding into its 3-D structure begins as the protein is being synthesized.</tr>
+                    <tr>More advanced, there are <b>3 factors</b> affecting cell structure as well.</tr>
+                    <tr>&rArr;pH  &rArr;Temperature &rArr;Salt concentration &rArr;Other Environmental factors</tr>
+                    <tr>Altering one of these factors leads to <b>denaturation</b>. This is the loss of the proteins shape rendering the protein inactive.</tr>
+                </table>
             </div>
         </li>
         <li>
             <button class="accordion">
                 Discuss how environmental conditions such as temperature pH and high concentrations of both polar and nonpolar substances can affect protein structure and therefor function.
             </button><div class="panel">
-                
+                         <dl>
+                             <dt>Temperature</dt>
+                             <dd>Raising temperature agitates the polypeptide chain enough to overcome the weak interactions that stabilize the structure.</dd>
+                             <dt>pH</dt>
+                             <dd>Blood is a Weak Base (7.4) and stomach acid is a Strong Acid (2).</dd>
+                             <dd>If blood or the stomach are outside of these ranges, the proteins that handle metabolizm and catabolism will denature.</dd>
+                             <dt>Polarity</dt>
+                             <dd>Going from aqueous to nonpolar. This causes the polypeptide chain to reshape the hydrophobic regions outside.</dd>
+                             <dt>Other</dt>
+                             <dd>There are other denaturation agents that disrupt the Hydrogen bonds, Ionic bonds, and Disulfide bridges.</dd>
+                         </dl>
             </div>
         </li>
         <li>
             <button class="accordion">
                 Describe the role of heat shock proteins.
-            </button><div class="panel"><p>Answer</p></div>
+            </button><div class="panel">
+                <p>These "chaperone" proteins help refold proteins after "heat shock"</p>
+                <div class="w3-content">
+                    <!--Edit src to picture-->
+                    <img class="mySlides" src="images/chaperonin.gif" style="width:100%">
+                    <img class="mySlides" src="images/chaperonin_2.gif" style="width:100%">
+                    <img class="mySlides" src="images/chaperonin_ua.gif" style="width:100%">
+                </div>
+            <div class="w3-center">
+                    <div class="w3-section">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                    </div>
+                </div>
+            </div>
         </li>
         <li>
             <button class="accordion">
@@ -421,6 +448,7 @@
     <footer>
         <script src="javascript/main.js"></script>
         <script src="javascript/search.js"></script>
+        <script src="javascript/slideshow.js"></script>
     </footer>
 </body>
 </html>

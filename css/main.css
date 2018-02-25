@@ -40,6 +40,9 @@ h1 {
 li {
     list-style: none;
 }
+li li {
+    list-style: upper-alpha;
+}
 ul {
     padding-left: 0;
 }
@@ -49,4 +52,7 @@ ul {
 p {
     margin: 0;
     padding: 0;
+}
+.mySlides {
+    display: none
 }
