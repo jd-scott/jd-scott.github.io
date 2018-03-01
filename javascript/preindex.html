@@ -1,0 +1,13 @@
+with open ("question.txt", "r") as question:
+  with open("preindex.html", "w") as head:
+    for line in question:
+      head.write('<li><button class="accordion">'+line+'</button><div class="panel"><p>Answer</p></div></li>\n')
+
+with open ("question.txt", "r") as question:
+  with open("preindex.html", "w") as body:
+    for line in question:
+      body.write('<li><button class="accordion">'+line+'</button><div class="panel"><p>Answer</p></div></li>\n')
+
+with open ("question.txt", "r") as question:
+  with open("preindex.html", "w") as foot:
+    foot.write('<li><button class="accordion">'+line+'</button><div class="panel"><p>Answer</p></div></li>\n')

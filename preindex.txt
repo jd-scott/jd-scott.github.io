@@ -1,0 +1,11 @@
+with open ("question.txt", "r") as question:
+  with open("preindex.html", "w") as head:
+    head.write('<!DOCTYPE html><html><head><title>Unit 2</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="css/main.css" rel="stylesheet" /><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /></head><body><input type="text" id="myInput" onkeyup="search()" placeholder="Search"><ul id="myUL">')
+
+with open ("question.txt", "r") as question:
+  with open("preindex.html", "a") as body:
+    for line in question:
+      body.write('<li><button class="accordion">'+line+'</button><div class="panel"><p>Answer</p></div></li>\n')
+
+with open("preindex.html", "a") as foot:
+  foot.write('</ul><footer><script src="javascript/main.js"></script><script src="javascript/search.js"></script><script src="javascript/slideshow.js"></script></footer></body></html>')
