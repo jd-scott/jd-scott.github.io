@@ -20,6 +20,8 @@
     <!--Search-->
     <input type="text" id="myInput" onkeyup="search()" placeholder="Search">
     <ul id="myUL">
+        <li><h4>Proteins</h4>
+        <li></li>
         <li>
             <button class="accordion">
                 (A) Describe each of the levels of structure of a protein. (B) Indicate the types of bonds or molecular interactions responsible for each level. (C) Be able to identify each if provided a description or diagram.
@@ -97,27 +99,24 @@
                 <div class="panel">There are other denaturation agents that disrupt the Hydrogen bonds, Ionic bonds, and Disulfide bridges.</div>
             </div>
         </li>
-        <li><h3>Lipids</h3></li>
         <li>
             <button class="accordion">
                 Describe the role of heat shock proteins.
             </button>
             <div class="panel">
                 <p>These "chaperone" proteins help refold proteins after "heat shock"</p>
-                <div class="w3-content">
-                    <!--Edit src to picture-->
-                    <img class="mySlides" src="images/chaperonin.gif" style="width:100%">
-                    <img class="mySlides" src="images/chaperonin_2.gif" style="width:100%">
-                    <img class="mySlides" src="images/chaperonin_ua.gif" style="width:100%">
-                </div>
-                <div class="w3-center">
-                    <div class="w3-section">
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                    </div>
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides1" src="images/chaperonin.gif">
+                    <img class="mySlides1" src="images/chaperonin_2.gif">
+                    <img class="mySlides1" src="images/chaperonin_ua.gif">
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
                 </div>
             </div>
         </li>
+        <!--Give these their own style, named title_header-->
+        <li><h4>Lipids</h4></li>
         <li>
             <button class="accordion">
                 Describe the basic structure molecular composition and properties of lipids (fats).
@@ -127,17 +126,13 @@
                 <div class="panel">Lipids are grouped together because they share one important trait, <i>they mix poorly</i>. This is due to their molecular structure, they are considered <i>Hydrophobic</i>. Notice, they are not generally considered polymers.</div>
                 <button class="accordion">Fats: Glycerol + Fatty Acid</button>
                 <div class="panel">
-                    <div class="w3-content">
-                        <!--Edit src to picture-->
-                        <img class="mySlides" src="images/triacylglycerol.jpg">
-                        <img class="mySlides" src="images/triacylglycerol_2.jpg">
-                        <img class="mySlides" src="images/triacylglycerol.gif">
-                    </div>
-                    <div class="w3-center">
-                        <div class="w3-section">
-                            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
-                        </div>
+                    <div class="w3-content w3-display-container">
+                        <img class="mySlides2" src="images/triacylglycerol.jpg">
+                        <img class="mySlides2" src="images/triacylglycerol_2.jpg">
+                        <img class="mySlides2" src="images/triacylglycerol.gif">
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
                     </div>
                 </div>
                 <button class="accordion">Phospholipids</button>
@@ -199,19 +194,38 @@
         </li>
         <li>
             <button class="accordion">
-                Compare and contrast the molecular structures properties and functions of phospholipids carotenoids steroids lipid based vitamins and waxes in living systems.
+                Compare and contrast the molecular structures properties and functions in living systems.
+                <ol type="list-style=1">
+                    <li>phospholipids: Form all biological membranes</li>
+                    <li>carotenoids &amp; chlorophylls: Light absorbing</li>
+                    <li>steroids: multiple rings share carbon; Cholesterol</li>
+                    <li>vitamins: small molecules not synthesized by the body; must be acquired by <b>diet</b>.</li>
+                    <li>waxes: Highly nonpolar and impermeable to water; protective coating</li>
+                </ol>
             </button>
             <div class="panel">
-                <p>Answer</p>
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides3" src="images/phospholipid2.jpg">
+                    <img class="mySlides3" src="images/carotenoid.gif">
+                    <img class="mySlides3" src="images/steroid.jpg">
+                    <img class="mySlides3" src="images/vitamin.jpg">
+                    <img class="mySlides3" src="images/wax.jpg">
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 2)">&#10095;</button>
+                </div>
+                <p>answer</p>
             </div>
-        </li>
-        <li><h3>Enzymes &amp; Common Biological Reactions</h3></li>
-        <li>
+
             <button class="accordion">
                 Describe how enzymes act as catalysts in facilitating reactions.
             </button>
             <div class="panel">
-                <p>Answer</p>
+                <ol>
+                    <li>Lower Energy barrier (E<sub>a</sub>)</li>
+                    <li>enzymes are not altered by the reactions</li>
+                    <li></li>
+                </ol>
             </div>
         </li>
         <li>
@@ -219,12 +233,19 @@
                 Explain the concepts of activation energy transition states and how enzymes alter these to make reactions proceed.
             </button>
             <div class="panel">
-                <p>Answer</p>
+                <dl>
+                    <dt>Transition State</dt>
+                    <dd>Intermediates</dd>
+                    <dd>Caused by the activation energy</dd>
+                    <dd>It is a reactive mode</dd>
+                    <dd>These are unstable and have higher free energy</dd>
+                    <dd>Heating the system puts in more kinetic Energy</dd>
+                </dl>
             </div>
         </li>
         <li>
             <button class="accordion">
-                Describe the different mechanisms enzymes use to lower the energy barrier: 
+                Describe the different mechanisms enzymes use to lower the energy barrier:
                 <ol>
                     <li>Orienting substrates</li>
                     <li>Inducing strain</li>
@@ -245,14 +266,14 @@
         </li>
         <li>
             <button class="accordion">
-                Describe the properties of: 
+                Describe the properties of:
                 <ol>
                     <li>active sites and allosteric sites</li>
                     <li>how substrate or competitor binding at these sites can alter the shape and function of the enzyme.</li>
                 </ol>
             </button>
             <div class="panel">
-                
+
             </div>
         </li>
         <li>
@@ -260,9 +281,11 @@
                 Explain what is meant by induced fit and how this relates to substrate and or inhibitor binding.
             </button>
             <div class="panel">
-                <p>Answer</p>
-            </div>
-        </li>
+                <button class="accordion">Induced fit: Enzyme changes shape when it binds the <b>substrate</b>, which alters the shape of the active site.</button>
+                <div class="panel">
+                    <p>Induced fit can be observed in the enzyme hexokinase, seen here with and without its substrates, glucose (red) and ATP (yellow).</p>
+                    <iframe src="https://giphy.com/embed/XIi4rwdKQM9jO9BHDj" width="480" height="302" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/XIi4rwdKQM9jO9BHDj">via GIPHY</a></p>
+</li>
         <li>
             <button class="accordion">
                 Describe the types of intermolecular interactions responsible for substrate/inhibitor binding and specificity.
@@ -360,10 +383,10 @@
                 <p>Answer</p>
             </div>
         </li>
-        <!--<h6>Cells - Basic cell types and features</h6>-->
+        <li><h4>Cells - Basic cell types and features</h4></li>
         <li>
             <button class="accordion">
-                1. Explain the 3 components of the cell theory.
+                Explain the 3 components of the cell theory.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -371,7 +394,27 @@
         </li>
         <li>
             <button class="accordion">
-                2. Describe what is meant by the surface area-to-volume ratio and explain how this limits the size of a cell.
+                Describe what is meant by the surface area-to-volume ratio and explain how this limits the size of a cell.
+            </button>
+            <div class="panel">
+                <p>Enter information from lab 4.</p>
+            </div>
+        </li>
+        <li>
+            <button class="accordion">
+                Describe the defining features of prokaryotic cells and eukaryotic cells.
+            </button>
+            <div class="panel">
+                <button class="accordion">Prokaryote</button>
+                <div class="panel"></div>
+                <button class="accordion">Eukaryote</button>
+                <div class="panel"></div>
+            </div>
+        </li>
+        <li><h4>Structure &amp; Properties of the plasma Membrane</h4></li>
+        <li>
+            <button class="accordion">
+                Describe the basic features of the plasma membrane and what roles it plays for the cell.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -379,7 +422,7 @@
         </li>
         <li>
             <button class="accordion">
-                3. Describe the defining features of prokaryotic cells and eukaryotic cells.
+                Describe in detail and be able to draw and label a plasma membrane including the organization of the phospholipids that form it and each of the following additional components: glycoproteins and glycolipids peripheral membrane proteins cholesterol and integral membrane proteins.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -387,7 +430,7 @@
         </li>
         <li>
             <button class="accordion">
-                1. Describe the basic features of the plasma membrane and what roles it plays for the cell.
+                For each of the components found in a plasma membrane describe their functions and the intermolecular interactions that associate them with the membrane.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -395,7 +438,7 @@
         </li>
         <li>
             <button class="accordion">
-                2. Describe in detail and be able to draw and label a plasma membrane including the organization of the phospholipids that form it and each of the following additional components: glycoproteins and glycolipids peripheral membrane proteins cholesterol and integral membrane proteins.
+                Describe the role of the plasma membrane in cell adhesion and cell recognition and provide detailed descriptions of the structures that play a role in these processes.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -403,7 +446,7 @@
         </li>
         <li>
             <button class="accordion">
-                3. For each of the components found in a plasma membrane describe their functions and the intermolecular interactions that associate them with the membrane.
+                List and describe the properties functions and molecular make up of the 3 types of cell junctions in animal cells: tight junctions desmosomes and gap junctions. Describe how plasmodesmata connect plant cells.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -411,7 +454,7 @@
         </li>
         <li>
             <button class="accordion">
-                4. Describe the role of the plasma membrane in cell adhesion and cell recognition and provide detailed descriptions of the structures that play a role in these processes.
+                Describe what is meant by “extracellular matrix” what this is made of and how integrin proteins are" involved in attachment of a cell to it.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -419,7 +462,7 @@
         </li>
         <li>
             <button class="accordion">
-                5. List and describe the properties functions and molecular make up of the 3 types of cell junctions in animal cells: tight junctions desmosomes and gap junctions. Describe how plasmodesmata connect plant cells.
+                Describe 6 key functions carried out by proteins and protein complexes in the membrane.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -427,7 +470,7 @@
         </li>
         <li>
             <button class="accordion">
-                6. Describe what is meant by “extracellular matrix” what this is made of and how integrin proteins are" involved in attachment of a cell to it.
+                Compare and contrast the three distinct processes by which substances can diffuse across a lipid "bilayer: simple diffusion osmosis and facilitated diffusion. Include a description of any protein" players that are involved.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -435,7 +478,7 @@
         </li>
         <li>
             <button class="accordion">
-                7. Describe 6 key functions carried out by proteins and protein complexes in the membrane.
+                Explain how factors such as the size of molecules the degree to which they are nonpolar and their" "ability to hydrogen bond with water affect their movement across lipid bilayers.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -443,7 +486,7 @@
         </li>
         <li>
             <button class="accordion">
-                8. Compare and contrast the three distinct processes by which substances can diffuse across a lipid "bilayer: simple diffusion osmosis and facilitated diffusion. Include a description of any protein" players that are involved.
+                Explain the mechanisms that give rise to turgor in plant cells.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -451,7 +494,7 @@
         </li>
         <li>
             <button class="accordion">
-                9. Explain how factors such as the size of molecules the degree to which they are nonpolar and their" "ability to hydrogen bond with water affect their movement across lipid bilayers.
+                Describe the effects of very dilute and very concentrated solutions on animal cells and be able to" properly use the terms hypertonic and hypotonic.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -459,7 +502,7 @@
         </li>
         <li>
             <button class="accordion">
-                10. Explain the mechanisms that give rise to turgor in plant cells.
+                Explain what is meant by osmotic pressure and describe the role of aquaporins in
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -467,7 +510,7 @@
         </li>
         <li>
             <button class="accordion">
-                11. Describe the effects of very dilute and very concentrated solutions on animal cells and be able to" properly use the terms hypertonic and hypotonic.
+                Explain the operation of channel vs. carrier proteins including the effect of solute concentration on their performance.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -475,7 +518,7 @@
         </li>
         <li>
             <button class="accordion">
-                12. Explain what is meant by osmotic pressure and describe the role of aquaporins in
+                Compare and contrast active transport vs. facilitated diffusion.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -483,7 +526,7 @@
         </li>
         <li>
             <button class="accordion">
-                13. Explain the operation of channel vs. carrier proteins including the effect of solute concentration on their performance.
+                Explain how ATP contributes to both primary and secondary active transport.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -491,7 +534,7 @@
         </li>
         <li>
             <button class="accordion">
-                14. Compare and contrast active transport vs. facilitated diffusion.
+                Diagram the actions of uniporters symporters and antiporters and distinguish their contributions to" cellular activities.
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -499,7 +542,7 @@
         </li>
         <li>
             <button class="accordion">
-                15. Explain how ATP contributes to both primary and secondary active transport.
+                Describe the action of the sodium-potassium ATPase and the concentration gradients that it creates and describe what is meant by a membrane potential."
             </button>
             <div class="panel">
                 <p>Answer</p>
@@ -507,23 +550,7 @@
         </li>
         <li>
             <button class="accordion">
-                16. Diagram the actions of uniporters symporters and antiporters and distinguish their contributions to" cellular activities.
-            </button>
-            <div class="panel">
-                <p>Answer</p>
-            </div>
-        </li>
-        <li>
-            <button class="accordion">
-                17. Describe the action of the sodium-potassium ATPase and the concentration gradients that it creates and describe what is meant by a membrane potential."
-            </button>
-            <div class="panel">
-                <p>Answer</p>
-            </div>
-        </li>
-        <li>
-            <button class="accordion">
-                18. Describe the process of endocytosis and compare and contrast phagocytosis pinocytosis and receptor-mediated endocytosis.
+                Describe the process of endocytosis and compare and contrast phagocytosis pinocytosis and receptor-mediated endocytosis.
             </button>
             <div class="panel">
                 <p>Answer</p>
